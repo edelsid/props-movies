@@ -1,0 +1,129 @@
+.movie-list {
+   padding: 0;
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card {
+   display: flex;
+   justify-content: space-between;
+   font-family: 'Arial';
+   height: 300px;
+   width: 600px;
+   margin-bottom: 20px;
+   padding: 30px;
+   box-shadow: 0 5px 10px lightgrey;
+}
+
+.main-bloc {
+   display: flex;
+   margin-bottom: 30px;
+}
+
+.poster {
+   position: relative;
+   height: 250px;
+   width: 180px;
+   background-color: lightskyblue;
+   box-shadow: 0 5px 10px lightgrey;
+   margin-right: 20px;
+}
+
+.label {
+   position: relative;
+   padding: 10px;
+   bottom: 85%;
+   left: 75%;
+   width: fit-content;
+   text-align: center;
+   text-transform: uppercase;
+   background-color: blueviolet;
+   color: white;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-info {
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.name {
+   text-transform: uppercase;
+   font-size: 26px;
+   margin-top: 100px;
+   color: rgb(92, 62, 62);
+}
+
+.card-body-stars {
+   list-style: none;
+   display: flex;
+   padding: 0;
+}
+
+.other-info {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+   justify-self: end;
+}
+
+.icon {
+   font-family: 'Font Awesome 6 Free';
+   font-size: 26px;
+   color: rgb(143, 132, 116);
+   height: 30px;
+   width: 30px;
+   line-height: 30px;
+}
+
+.icon:nth-child(n+2) {
+   margin-left: 10px;
+}
+
+.favorite::before {
+   content: '\f004';
+}
+
+.share::before {
+   content: '\f1e0';
+   font-weight: bold;
+}
+
+.btn {
+   padding: 15px;
+   border: 0;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.btn:nth-child(n+2) {
+   margin-left: 10px;
+}
+
+.btn::after {
+   font-family: 'Font Awesome 6 Free';
+}
+
+.buy-btn {
+   background-color:rgb(143, 132, 116) ;
+   color: white;
+}
+
+.buy-btn::after {
+   content: '\f158';
+   font-size: 12px;
+}
+
+.reference {
+   background-color: white;
+   color: rgb(143, 132, 116);
+}
+
+.reference::after {
+   content: '\f061';
+   margin-left: 5px;
+}
